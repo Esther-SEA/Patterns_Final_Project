@@ -1,6 +1,7 @@
 module com.example.finalproject_patterns {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
 
 
     opens com.example.finalproject_patterns to javafx.fxml;

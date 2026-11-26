@@ -15,8 +15,9 @@
              <TextField fx:id="nameID" layoutX="56.0" layoutY="59.0" prefHeight="25.0" prefWidth="237.0" promptText="Name" />
              <TextField fx:id="emailID" layoutX="56.0" layoutY="96.0" prefHeight="25.0" prefWidth="237.0" promptText="Email" />
              <TextField fx:id="passwordID" layoutX="56.0" layoutY="133.0" prefHeight="25.0" prefWidth="237.0" promptText="Password" />
-             <Button fx:id="loginbuttonID" layoutX="256.0" layoutY="230.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Login" />
-             <Button fx:id="signupbuttonID" layoutX="56.0" layoutY="183.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="237.0" text="Sign up" />
+             <Button fx:id="loginbuttonID" layoutX="256.0" layoutY="230.0" mnemonicParsing="false" onAction="#loginClick" prefHeight="25.0" prefWidth="74.0" text="Login" />
+             <Button fx:id="signupbuttonID" layoutX="56.0" layoutY="183.0" mnemonicParsing="false" onAction="#signupClick" prefHeight="25.0" prefWidth="237.0" text="Sign up" />
+             <ChoiceBox layoutX="224.0" layoutY="18.0" prefHeight="18.0" prefWidth="106.0" />
          </children>
       </Pane>
    </children>

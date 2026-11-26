@@ -30,9 +30,19 @@ public class LoginController {
     }
 
     @FXML
+    private void signupClick(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(FinalApplication.class.getResource("signup.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle("Sign up");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
     private void loginClick(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(FinalApplication.class.getResource("registration.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 770, 600);
+        Scene scene = new Scene(fxmlLoader.load());
         String css = FinalApplication.class.getResource("style.css").toExternalForm();
         scene.getStylesheets().add(css);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

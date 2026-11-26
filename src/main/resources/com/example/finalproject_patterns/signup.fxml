@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="280.0" prefWidth="354.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignupController">
+   <children>
+      <Pane layoutY="1.0" prefHeight="280.0" prefWidth="356.0">
+         <children>
+            <Label layoutX="25.0" layoutY="23.0" text="Create a new Account">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font></Label>
+             <TextField fx:id="nameID" layoutX="56.0" layoutY="59.0" prefHeight="25.0" prefWidth="237.0" promptText="Name" />
+             <TextField fx:id="emailID" layoutX="56.0" layoutY="96.0" prefHeight="25.0" prefWidth="237.0" promptText="Email" />
+             <TextField fx:id="passwordID" layoutX="56.0" layoutY="133.0" prefHeight="25.0" prefWidth="237.0" promptText="Password" />
+             <Button fx:id="loginbuttonID" layoutX="256.0" layoutY="230.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Login" />
+             <Button fx:id="signupbuttonID" layoutX="56.0" layoutY="183.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="237.0" text="Sign up" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

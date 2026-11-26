@@ -6,4 +6,6 @@ module com.example.finalproject_patterns {
 
     opens com.example.finalproject_patterns to javafx.fxml;
     exports com.example.finalproject_patterns;
+    exports controllers;
+    opens controllers to javafx.fxml;
 }
